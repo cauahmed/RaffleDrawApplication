@@ -1,0 +1,3 @@
+# RaffleDrawApplication
+Android prototype for a raffle draw app that enables organizers to create and manage raffles.
+Work in progress with focus on visual aspects and bugs.....
