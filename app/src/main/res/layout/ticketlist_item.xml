@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainticketLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txt_raffleid"
+                android:layout_width="22dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="8dp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.346" />
+
+            <TextView
+                android:id="@+id/customername_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ticketnumber_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Number"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/customername_txt"
+                app:layout_constraintStart_toStartOf="@+id/customername_txt"
+                app:layout_constraintTop_toBottomOf="@+id/customername_txt" />
+
+            <TextView
+                android:id="@+id/customerid_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer ID"
+                android:textColor="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="@+id/ticketnumber_txt"
+                app:layout_constraintStart_toStartOf="@+id/ticketnumber_txt"
+                app:layout_constraintTop_toBottomOf="@+id/ticketnumber_txt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

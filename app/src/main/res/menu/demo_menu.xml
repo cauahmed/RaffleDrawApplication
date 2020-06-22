@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_home"
+        android:title="favourite"
+        app:showAsAction="always"
+        />
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_raffle_creator"
+        android:title="Raffle Creator"
+        android:icon="@drawable/ic_raffle_create"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_raffle_list"
+        android:title="Raffle List"
+        android:icon="@drawable/ic_raffle_list"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_draw_winner"
+        android:title="Draw Winner"
+        android:icon="@drawable/ic_draw_winner"
+        app:showAsAction="always"/>
+
+</menu>

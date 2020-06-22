@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raffledrawapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".RaffleManagerActivity">
+
+        </activity>
+        <activity android:name=".DisplayWinnerActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+        />
+        <activity android:name=".EditRaffleActivity"
+            android:parentActivityName=".RaffleManagerActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+        />
+        <activity android:name=".TicketListActivity"
+            android:parentActivityName=".RaffleManagerActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
+        <activity android:name=".EditCustomerActivity"
+            android:parentActivityName=".RaffleManagerActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".TicketSellActivity"
+            android:parentActivityName=".RaffleManagerActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"
+            />
+
+
+
+    </application>
+
+</manifest>
